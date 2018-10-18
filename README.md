@@ -33,7 +33,7 @@ When a new order (1004, sell, 10, 460) comes, the resulting state is:
 
 ## Design choises
 
-This was written as part of a exercise for Bitmain.
+This was written as part of a exercise for btc.com/Bitmain.
 
 - Used `react` for controller/view layer
 - Used `redux` for model layer
