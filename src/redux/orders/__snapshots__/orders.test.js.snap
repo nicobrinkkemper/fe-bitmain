@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reducers should match snapshot 1`] = `
+Array [
+  Object {
+    "id": 1,
+    "price": 480,
+    "quantity": 6,
+    "type": "sell",
+  },
+  Object {
+    "id": 2,
+    "price": 470,
+    "quantity": 0,
+    "type": "buy",
+  },
+  Object {
+    "id": 3,
+    "price": 460,
+    "quantity": 3,
+    "type": "buy",
+  },
+  Object {
+    "counterOrder": Object {
+      "id": 2,
+      "price": 470,
+      "quantity": 8,
+      "type": "buy",
+    },
+    "counterOrderResult": Object {
+      "id": 2,
+      "price": 470,
+      "quantity": 0,
+      "type": "buy",
+    },
+    "id": "4-2",
+    "order": Object {
+      "id": 4,
+      "price": 460,
+      "quantity": 10,
+      "type": "sell",
+    },
+    "orderResult": Object {
+      "id": 4,
+      "price": 460,
+      "quantity": 2,
+      "type": "sell",
+    },
+    "price": 465,
+    "quantity": 8,
+    "toggled": false,
+    "ts": 946681200000,
+    "type": "match",
+  },
+  Object {
+    "counterOrder": Object {
+      "id": 3,
+      "price": 460,
+      "quantity": 5,
+      "type": "buy",
+    },
+    "counterOrderResult": Object {
+      "id": 3,
+      "price": 460,
+      "quantity": 3,
+      "type": "buy",
+    },
+    "id": "4-3",
+    "order": Object {
+      "id": 4,
+      "price": 460,
+      "quantity": 2,
+      "type": "sell",
+    },
+    "orderResult": Object {
+      "id": 4,
+      "price": 460,
+      "quantity": 0,
+      "type": "sell",
+    },
+    "price": 460,
+    "quantity": 2,
+    "toggled": false,
+    "ts": 946681200000,
+    "type": "match",
+  },
+  Object {
+    "id": 4,
+    "price": 460,
+    "quantity": 0,
+    "type": "sell",
+  },
+]
+`;

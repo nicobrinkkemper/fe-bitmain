@@ -1,0 +1,213 @@
+
+.Orders {
+  display: grid;
+  padding-top:20px;
+  height: 100%;
+	justify-self: center; 
+  grid-template-columns: 100px 100px 200px;
+  grid-template-rows: 1fr;
+  grid-gap: 1px 1px;
+  grid-template-areas: "buy sell match";
+	height: auto;
+  margin: 0 auto;
+  height:99vh
+}
+.MatchInfo{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin:auto 0;
+  font-size:12px;
+}
+.MatchInfo .order{
+  font-size:12px;
+  padding:5px;
+}
+.match, .order{
+  height:22px;
+  transition:height .2s ease;
+}
+.match.toggled{
+  overflow: hidden;
+  height:180px;
+}
+.match .toggle{
+  display: flex;
+  flex-direction: column
+}
+.descriptor{
+  margin:0 auto;
+}
+.match .descriptor{
+  width:180px;
+}
+#sell {
+  grid-area: sell;
+}
+.MatchInfo .sell,
+#sell .order{
+  background:rgba(255, 72, 59, 0.1);
+}
+#buy {
+  grid-area: buy; 
+}
+.MatchInfo .buy,
+#buy .order{
+  background: rgba(96, 215, 92, 0.1);
+}
+#match {
+  grid-area: match;
+}
+#match .match{
+  display:flex;
+  flex-direction: initial;
+  cursor: pointer;
+  background-color: rgba(16, 91, 212, 0.1);
+  transition:background-color .2s ease;
+}
+#match .match:hover{
+  background-color: rgba(16, 91, 212, 0.5);
+}
+#match .match.toggled{
+  background-color: rgba(16, 91, 212, 0.05);
+}
+#match .match.toggled:hover{
+  background-color: rgba(16, 91, 212, 0.05);
+}
+
+.type, .quantity, .price {
+  display: inline-block;
+}
+.order, .header{
+  position: relative;
+  text-align: center;
+  padding:10px;
+  background:rgba(255, 255, 255, .9)
+}
+.order .tinyId{
+  position: absolute;
+  top:2px;
+  left:2px;
+  opacity: .5;
+  font-size:10px;
+}
+.header{
+  height:22px;
+}
+.toggle {
+  display: flex;
+  flex-direction: row;
+}
+.match .hidden{
+  height:0;
+  visibility: hidden;
+  overflow:hidden;
+}
+ul{
+  display: flex;
+  flex-flow: column;
+  background:white;
+  margin:0;
+  height:auto;
+  margin-bottom: auto;
+  padding:0;
+  list-style: none;
+}
+.discriptor {
+  display: flex;
+}
+li{
+  margin:0;
+  margin:0;
+  border-left:1px rgba(0, 0, 0, 0.1) solid;
+}
+li + li {
+  border-top:1px rgba(0, 0, 0, 0.1) solid;
+}
+
+.reset {
+  background:white;
+  position: fixed;
+  top:12px;
+  left:12px
+}
+#orders {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+  }
+  .order {
+    font-size: 16px;
+  }
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .Orders {
+      max-width: 583px;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    
+    .Orders {
+      max-width: 1165px;
+    }
+  }
+
+  /* SPINNER source:https://loading.io/css/ */
+  .Spinner{
+    position: absolute;
+    right:-12px;
+    top:-12px;
+    transform: scale(.5,.5);
+    transition: opacity .1s 3s ease;
+    opacity: 0;
+  }
+  .Spinner.show{
+    opacity: 1;
+    transition: opacity .1s ease;
+  }
+  .lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    margin: 6px;
+    border: 6px solid #cef;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #cef transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
