@@ -1,6 +1,6 @@
 # Summary
 
-This is a simple trading platform Web UI. It should have access to [this api](`https://github.com/btccom/fe-exercise-backend`) at port 5001.
+This is a simple trading platform Web UI. It should have access to [this api](https://github.com/btccom/fe-exercise-backend) at port 5001.
 The original exercise of this project is found [here](https://github.com/btccom/Hire/blob/master/exercise/FE-exchange-en.md)
 If you have the backend running at localhost:5001, you can visit [nicobrinkkemper.github.io/fe-bitmain/](https://nicobrinkkemper.github.io/fe-bitmain/) to see it working.
 
